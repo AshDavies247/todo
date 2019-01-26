@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include font-size($fzBase);
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    color: $fontColorTodo;
+}
+
+.alpha {
+    font-size: em($fzHeading);
+    text-align: center;
+    margin: em(60,$fzHeading) 0 em(20,$fzHeading);
+    text-shadow:
+    -1px -1px 0 #333,
+    1px -1px 0 #333,
+    -1px 1px 0 #333,
+    1px 1px 0 #333;  
+}
+
+.beta {
+    font-size: $fzHeadingSmall;
+    margin: em(30,$fzHeadingSmall) 0;
+    text-shadow:
+    -1px -1px 0 #333,
+    1px -1px 0 #333,
+    -1px 1px 0 #333,
+    1px 1px 0 #333;
+    text-align: center;
+}
